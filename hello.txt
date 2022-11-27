@@ -1,4 +1,4 @@
-Git
+*Git*
 
 git clone "link" - Copia um repositorio do github
 git log - mostra o historico git
@@ -7,7 +7,31 @@ git status - mostra arquivos modificados e preparados
 git commit -m "Alterações feitas" - Pegas os arquivos e leva para área de envio para o commit
 git push ou git push origin master - Para enviar todos os arquivos alterados na área de preparação para o repositorio origin - master
 
-CMD
+
+
+*para adicionar uma chave SSH - git bash*
+
+git remote set-url origin [link SSH], caso a chave esteja com o http, vai gerar erro
+
+ls -al ~/.ssh - verificar se existe alguma chave ssh na pasta do repositorio clonado
+
+caso não tenha
+ssh-keygen -t ed25519 -C "your@email.com"
+Proximas configurações perguntam
+Um nome para a chave
+Uma senha
+Confirmação de senha
+
+copie a chave criada
+clip < ~/.ssh/id_ed25519.pub - Esse é o "/NomeDaChave".pub
+
+Vá no github - setings - ssh - add - Esolher um nome para a chave - colar a chave na parte inferior - create
+
+OBS - isso criptografa as informações transmitidas pelo git (Talvez para não usar a senha do usuario e expor sem nescessidade sua senha)
+
+
+
+*CMD*
 
 code . - Abre o vsCode
 mkdir NomeDaPasta - Cria uma pasta
