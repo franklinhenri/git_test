@@ -5,7 +5,7 @@ git log - mostra o historico git
 git add . ou git add arquivo.txt - adiciona os arquivos modificados a área de preparação
 git status - mostra arquivos modificados e preparados
 git commit -m "Alterações feitas" - Pegas os arquivos e leva para área de envio para o commit
-
+git push ou git push origin master - Para enviar todos os arquivos alterados na área de preparação para o repositorio origin - master
 
 CMD
 
