@@ -1,0 +1,15 @@
+Git
+
+git clone "link" - Copia um repositorio do github
+git log - mostra o historico git
+git add . ou git add arquivo.txt - adiciona os arquivos modificados a área de preparação
+git status - mostra arquivos modificados e preparados
+git commit -m "Alterações feitas" - Pegas os arquivos e leva para área de envio para o commit
+
+
+CMD
+
+code . - Abre o vsCode
+mkdir NomeDaPasta - Cria uma pasta
+mkdir s/ NomeDaPasta - Deleta uma pasta
+type null > NomeDoArquivo.txt - Cria um arquivo
